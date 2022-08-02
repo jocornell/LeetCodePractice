@@ -1,9 +1,11 @@
 
 # 143 Reorder List
 
+# O(N) Time, O(1) Space
+
 class Solution:
     def reorderList(self, head: ListNode) -> None:
-        
+
         # Find the 2nd half of the list.
         slow, fast = head, head.next
         while fast and fast.next:
